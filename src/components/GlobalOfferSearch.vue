@@ -36,7 +36,7 @@ async function searchAllOffers() {
 
 <template>
   <div class="card">
-    <h1>Wyszukiwarka ofert</h1>
+    <h2>Wyszukiwarka ofert bez kategori</h2>
     <input v-model="searchName" placeholder="Wpisz nazwę dowolnego produktu" />
     <button @click="searchAllOffers" :disabled="isLoading">
       {{ isLoading ? 'Szukam...' : 'Szukaj ofert' }}
